@@ -1,0 +1,57 @@
+:root {
+    background-color: var(--color-bg);
+    color: var(--color-body);
+}
+
+.color-scheme-light {
+    background-color: var(--color-bg);
+    color: var(--color-body);
+
+    --color-bg: transparent;
+    --color-heading: #111;
+    --color-body: #222;
+    --color-subheading: #333;
+    --color-accent: var(--gold);
+
+    --color-button: #bbb;
+    --color-button-text: #111;
+}
+
+.color-scheme-dark {
+    background-color: var(--color-bg);
+    color: var(--color-body);
+
+    --color-bg: #111;
+    --color-heading: #eee;
+    --color-body: #eee;
+    --color-subheading: #ccc;
+    --color-accent: var(--gold);
+
+    --color-button: #555;
+    --color-button-text: #eee;
+}
+
+.color-heading {
+    color: var(--color-heading);
+}
+
+.color-body {
+    color: var(--color-body);
+}
+
+.color-subheading,
+.subheading {
+    color: var(--color-subheading);
+}
+
+.color-button {
+    color: var(--color-button-text);
+}
+
+.bg-button {
+    background-color: var(--color-button);
+}
+
+.bg-inherit {
+    background-color: var(--color-bg);
+}

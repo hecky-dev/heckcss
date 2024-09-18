@@ -1,0 +1,21 @@
+.container {
+    --max: 100rem;
+    display: grid;
+    grid-template-columns: [full-start] 1fr [wide-start] 3% [main-start] 3% [slim-start] min(var(--max), 84%) [slim-end] 3% [main-end] 3% [wide-end] 1fr [full-end];
+
+    >* {
+        grid-column: main;
+    }
+}
+
+.is-full {
+    grid-column: full;
+}
+
+.is-wide {
+    grid-column: wide;
+}
+
+.is-slim {
+    grid-column: slim;
+}
